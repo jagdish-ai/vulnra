@@ -21,7 +21,7 @@ class Settings(BaseSettings):
     secret_key: str = Field(default="dev-secret-change-me", validation_alias=AliasChoices("SECRET_KEY", "secret_key"))
 
     # CORS — comma-separated string in env, e.g.:
-    #   ALLOWED_ORIGINS=https://vulnra.ai,https://daring-art.up.railway.app
+    #   ALLOWED_ORIGINS=https://vulnra.ai,http://localhost:3000
     # Falls back to safe defaults + whatever FRONTEND_URL is set to.
     allowed_origins_env: Optional[str] = Field(
         default=None,
@@ -33,6 +33,7 @@ class Settings(BaseSettings):
         base = [
             "http://localhost:3000",
             "http://127.0.0.1:3000",
+            "http://frontend:3000",
             "http://localhost:8000",
             "http://127.0.0.1:8000",
             "https://vulnra.ai",
@@ -93,7 +94,7 @@ class Settings(BaseSettings):
         validation_alias=AliasChoices("LEMON_SQUEEZY_ENTERPRISE_VARIANT_ID", "lemonsqueezy_enterprise_variant_id"),
     )
     
-    # Frontend URL for redirects
+    # Frontend URL for redirects (set to http://frontend:3000 in Docker)
     frontend_url: str = Field(default="http://localhost:3000", validation_alias=AliasChoices("FRONTEND_URL", "frontend_url"))
 
     # Port

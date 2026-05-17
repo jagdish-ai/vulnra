@@ -88,17 +88,4 @@ jobs:
           cache-to: type=gha,mode=max
 
       - name: Notify successful build
-        run: echo "✅ GuardianForge build successful on main branch"
-
-# Optional: Auto-deploy to Railway (uncomment when ready)
-#  deploy:
-#    needs: build
-#    runs-on: ubuntu-latest
-#    if: github.ref == 'refs/heads/main'
-#    steps:
-#      - uses: actions/checkout@v4
-#      - name: Railway Deploy
-#        uses: railwayapp/actions/deploy@v1
-#        with:
-#          token: ${{ secrets.RAILWAY_TOKEN }}
-#          service: guardianforge-production   # change to your service name
+        run: echo "🎉 GuardianForge build successful on main branch"
