@@ -43,7 +43,7 @@ Headers are transmitted securely and used only for scan requests. They are store
 1. Validate the endpoint is reachable
 2. Run Garak probes (jailbreaks, prompt injection, PII leakage, encoding evasion)
 3. Run DeepTeam probes (OWASP LLM Top 10 coverage)
-4. Pass each response through the Claude 3 Haiku AI Judge
+4. Pass each response through the Gemini Guardian Judge
 5. Calculate a unified risk score (0–10)
 6. Map findings to OWASP LLM Top 10 and MITRE ATLAS
 

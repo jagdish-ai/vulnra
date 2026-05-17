@@ -24,7 +24,7 @@ const LOG_LINES = [
   "Running PII leakage probes...",
   "Running policy bypass detection...",
   "Analyzing model responses...",
-  "Running AI Judge (Claude 3 Haiku)...",
+  "Running Gemini Guardian Judge...",
   "Computing risk score...",
   "Mapping to OWASP LLM Top 10...",
   "Generating findings report...",
@@ -532,7 +532,7 @@ function QuickScanInner() {
 
             {/* Powered by */}
             <p className="text-center font-mono text-[8.5px] tracking-widest text-white/20 pt-2">
-              Powered by Garak + DeepTeam · AI Judge by Claude 3 Haiku
+              Powered by Veea Lobster Trap + Gemini · Garak + DeepTeam
             </p>
           </div>
         )}

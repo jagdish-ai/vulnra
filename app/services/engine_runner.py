@@ -35,8 +35,8 @@ def run_all_engines(
     Engine schedule:
       All tiers   : Garak
       All tiers   : DeepTeam (requires OPENAI_API_KEY)
-      pro/ent     : PyRIT converter
-      pro/ent     : EasyJailbreak (requires ANTHROPIC_API_KEY)
+      pro/ent     : PyRIT converter (uses Gemini judge)
+      pro/ent     : EasyJailbreak (requires GEMINI_API_KEY)
 
     All engine imports are lazy so this module loads without pulling in
     heavy ML dependencies at startup.
@@ -90,7 +90,7 @@ def run_all_engines(
             logger.error(f"[{scan_id}] PyRIT engine failed: {exc}")
 
     # ── 4. EasyJailbreak (pro / enterprise) ───────────────────────────────────
-    if tier in ("pro", "enterprise") and os.environ.get("ANTHROPIC_API_KEY"):
+    if tier in ("pro", "enterprise") and os.environ.get("GEMINI_API_KEY"):
         try:
             from app.easyjailbreak_engine import run_easyjailbreak_scan
             result = run_easyjailbreak_scan(scan_id, url, tier)

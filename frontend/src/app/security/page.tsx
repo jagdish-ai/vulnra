@@ -49,7 +49,7 @@ const CONTROLS = [
       { control: "Rate limiting", detail: "SlowAPI (Redis-backed) enforces per-user, per-tier rate limits on all scan endpoints. Requests exceeding limits receive HTTP 429." },
       { control: "Input validation", detail: "All API inputs are validated using Pydantic v2 models. Invalid inputs are rejected before reaching business logic." },
       { control: "Dependency scanning", detail: "Python and Node.js dependencies are scanned for known CVEs on every push using GitHub Dependabot." },
-      { control: "No stored plain-text secrets", detail: "Environment variables (API keys, Supabase credentials, Anthropic key) are injected at runtime via Railway environment variables. They are never committed to the repository." },
+      { control: "No stored plain-text secrets", detail: "Environment variables (API keys, Supabase credentials, Gemini API key) are injected at runtime via Railway environment variables. They are never committed to the repository." },
     ],
   },
   {
@@ -75,7 +75,7 @@ const SUBPROCESSORS = [
   { name: "Railway Corporation", purpose: "Application hosting and deployment", region: "United States", dpa: true },
   { name: "Lemon Squeezy", purpose: "Payment processing and subscription billing", region: "United States", dpa: true },
   { name: "Resend Inc.", purpose: "Transactional email delivery", region: "United States", dpa: true },
-  { name: "Anthropic, PBC", purpose: "AI Judge (Claude API) — probe response text only, no PII", region: "United States", dpa: true },
+  { name: "Google, LLC", purpose: "Gemini Guardian Judge — probe response text only, no PII", region: "United States", dpa: true },
   { name: "Upstash", purpose: "Redis (rate limiting, job queues)", region: "United States", dpa: true },
 ];
 
