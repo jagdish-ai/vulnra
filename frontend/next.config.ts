@@ -40,6 +40,10 @@ const SECURITY_HEADERS = [
         API_ORIGIN,
         "https://*.supabase.co",
         "wss://*.supabase.co",
+        "http://host.docker.internal:54321",
+        "ws://host.docker.internal:54321",
+        "http://localhost:54321",
+        "http://127.0.0.1:54321",
 
       ].join(" "),
       "img-src 'self' data: https:",

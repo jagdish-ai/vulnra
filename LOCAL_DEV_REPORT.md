@@ -118,7 +118,7 @@ These credentials must be filled in manually in `.env` before production use:
 
 | Variable | Where | How to Get |
 |----------|-------|------------|
-| `ANTHROPIC_API_KEY` | `.env` | https://console.anthropic.com/settings/keys |
+
 | `LEMONSQUEEZY_API_KEY` | `.env` | https://app.lemonsqueezy.com/settings/api |
 | `LEMONSQUEEZY_STORE_ID` | `.env` | Lemon Squeezy dashboard |
 | `LEMONSQUEEZY_WEBHOOK_SECRET` | `.env` | Lemon Squeezy webhook settings |
@@ -126,7 +126,7 @@ These credentials must be filled in manually in `.env` before production use:
 | `LEMONSQUEEZY_ENTERPRISE_VARIANT_ID` | `.env` | Product variant ID from Lemon Squeezy |
 | `RESEND_API_KEY` | `.env` | https://resend.com/api-keys |
 | `GARAK_VENV_PATH` | `.env` | Path to local Garak venv (e.g. `D:\shield\garak_env` or `/Users/jagdishsingh/vulnra/garak_env`) |
-| `OPENAI_API_KEY` | `.env` | Optional — for DeepTeam probes |
+
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | `frontend/.env.local` | From Supabase Dashboard → Settings → API |
 | `SECRET_KEY` | `.env` | Already set to a secure random value — do not commit |
 

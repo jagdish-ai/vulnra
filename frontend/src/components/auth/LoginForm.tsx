@@ -42,8 +42,8 @@ export default function LoginForm({ message, redirectTo }: { message?: string; r
         return;
       }
 
-      // Session cookies are now written to document.cookie by @supabase/ssr.
-      // router.push sends them with the next request so the server can read them.
+      // Wait for @supabase/ssr to persist session cookies before navigating
+      await new Promise(r => setTimeout(r, 150));
       router.push(afterLoginPath);
       router.refresh();
     } catch {
