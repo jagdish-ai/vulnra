@@ -107,7 +107,7 @@ cd frontend && npm install && cd ..
 
 | Service | URL | Description |
 |---------|-----|-------------|
-| **Frontend** | http://localhost:3000 | Web UI |
+| **Frontend** | http://localhost:3001 | Web UI |
 | **Backend API** | http://localhost:8000 | REST API |
 | **API Docs** | http://localhost:8000/docs | Swagger documentation |
 | **Demo LLM** | http://localhost:8001 | Vulnerable target for testing |

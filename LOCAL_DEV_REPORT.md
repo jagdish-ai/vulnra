@@ -162,9 +162,9 @@ docker run -d -p 6379:6379 redis:7-alpine
 ### Option A — Docker Compose (Recommended)
 
 ```bash
-docker-compose up --build
+docker compose up --build
 # Backend: http://localhost:8000
-# Frontend: http://localhost:3000
+# Frontend: http://localhost:3001
 # Docs: http://localhost:8000/docs
 ```
 

@@ -335,7 +335,7 @@ LEMON_SQUEEZY_PRO_VARIANT_ID=...
 LEMON_SQUEEZY_ENTERPRISE_VARIANT_ID=...
 
 # URLs
-FRONTEND_URL=http://localhost:3000
+FRONTEND_URL=http://localhost:3001
 NEXT_PUBLIC_API_URL=http://localhost:8000
 ```
 
@@ -392,7 +392,7 @@ celery -A app.worker worker --loglevel=info
 # Frontend
 cd D:/VULNRA/frontend
 npm install
-npm run dev    # → http://localhost:3000
+npm run dev    # → http://localhost:3001
 ```
 
 ---

@@ -11,7 +11,7 @@
 #
 # Services:
 #   backend  → http://localhost:8000  | http://backend:8000
-#   frontend → http://localhost:3000  | http://frontend:3000
+#   frontend → http://localhost:3001  | http://frontend:3000
 #   redis    → redis://redis:6379/0
 # ─────────────────────────────────────────────────────────────
 
@@ -33,7 +33,7 @@ services:
       # Allow frontend from Docker host or container name
       - FRONTEND_URL=http://frontend:3000
       # Include Docker service name in CORS
-      - ALLOWED_ORIGINS=http://localhost:3000,http://127.0.0.1:3000,http://frontend:3000,http://localhost:8000
+      - ALLOWED_ORIGINS=http://localhost:3001,http://127.0.0.1:3001,http://frontend:3000,http://localhost:8000
       # Redis via Docker service name
       - REDIS_URL=redis://redis:6379/0
       # Bind to all interfaces inside the container
@@ -65,7 +65,7 @@ services:
         NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://backend:8000}
     container_name: vulnra-frontend
     ports:
-      - "3000:3000"
+      - "3001:3000"
     environment:
       - PORT=3000
       - HOSTNAME=0.0.0.0

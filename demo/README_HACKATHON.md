@@ -59,7 +59,7 @@ cd frontend && npm install && npm run dev
 # 4. In another terminal, start Lobster Trap (if available)
 docker run -d -p 9090:9090 lobster-trap/lobster-trap:latest
 
-# 5. Open http://localhost:3000 and scan http://localhost:8001
+# 5. Open http://localhost:3001 and scan http://localhost:8001
 ```
 
 That is five commands. The rest is the browser.
