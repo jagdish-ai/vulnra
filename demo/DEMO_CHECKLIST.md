@@ -57,7 +57,7 @@
 ### Validate the Full Stack
 
 - [ ] **Open browser at `http://localhost:3001/scanner`** — confirm login page loads
-- [ ] **Log in** with a Supabase account (email/password or GitHub OAuth)
+- [ ] **Log in** with a Supabase account (email/password)
 - [ ] **Create a test scan** against NexaBank (`http://localhost:8001`), select "basic" depth
 - [ ] **Wait for scan to complete** — confirm findings appear in the Findings tab
 - [ ] **Open Shield tab** — confirm intercept events appear (DENY, QUARANTINE, ALLOW)

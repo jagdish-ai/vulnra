@@ -39,7 +39,7 @@ const CONTROLS = [
       { control: "Supabase Auth", detail: "Passwords are never stored in plain text. Supabase Auth uses bcrypt hashing with a per-user salt." },
       { control: "API key hashing", detail: "vk_live_ API keys are shown once at creation. We store only the SHA-256 hash. If lost, the key must be revoked and regenerated." },
       { control: "JWT session tokens", detail: "Supabase issues short-lived JWT access tokens (default 1 hour) and longer-lived refresh tokens stored in HttpOnly, Secure, SameSite=Lax cookies." },
-      { control: "OAuth (GitHub, Google)", detail: "OAuth flows use Supabase Auth's PKCE implementation. We never receive or store the OAuth provider's access token." },
+      { control: "Authentication", detail: "Email/password only. No OAuth providers are configured or accepted." },
     ],
   },
   {

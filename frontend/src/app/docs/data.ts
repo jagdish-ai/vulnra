@@ -17,7 +17,7 @@ export const DOCS: DocPage[] = [
     sections: [
       {
         heading: "1. Create an account",
-        content: `Sign up at vulnra.ai/signup with your email or GitHub/Google OAuth. No credit card required for the free tier.
+        content: `Sign up at vulnra.ai/signup with your email. No credit card required for the free tier.
 
 After signing up you will land on the Scanner dashboard at /scanner.`,
       },

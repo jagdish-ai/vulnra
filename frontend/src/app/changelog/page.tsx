@@ -225,7 +225,7 @@ const RELEASES = [
         "Multi-engine result merging + deduplication",
       ]},
       { cat: "Platform", items: [
-        "Supabase Auth — email/password, GitHub OAuth, Google OAuth",
+        "Supabase Auth — email/password",
         "SlowAPI tier-based rate limiting (1/10/100 req/min)",
         "OWASP LLM Top 10 + MITRE ATLAS + EU AI Act compliance mappings",
         "Cyberpunk scanner dashboard with real-time polling",
