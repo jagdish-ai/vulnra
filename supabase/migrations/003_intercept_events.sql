@@ -6,7 +6,7 @@
 
 create table if not exists intercept_events (
     id uuid primary key default gen_random_uuid(),
-    scan_id uuid not null references scans(id) on delete cascade,
+    scan_id uuid not null,
     probe_index integer not null default 0,
     timestamp timestamptz not null default now(),
     prompt text not null,
